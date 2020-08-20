@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Product</title>
+</head>
+<body>
+    <h1>Create New Product</h1>
+    <br/>
+    <form action="#" th:action="@{/save}" th:object="${product}" method="post">
+        <h2>Product Name:</h2>
+        <input type="text" th:field="*{name}" />
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
